@@ -2,5 +2,5 @@
     "app_name": "GML",
     "author": "Clément Roussel",
     "main_module": "src/main/python/main.py",
-    "version": "0.0.0"
+    "version": "22.07.0"
 }
