@@ -2,4 +2,4 @@
 
 ## How to build GML from sources
 
-    ```conda create --name gml-venv python=3.6```
+```conda create --name gml-venv python=3.6```
