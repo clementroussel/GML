@@ -2,7 +2,6 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QGridLayout, QLab
 from PyQt5.QtCore import Qt
 
 import os
-import numpy as np
 import wget
 
 
@@ -133,6 +132,14 @@ class MainWindow(QMainWindow):
         again.clicked.connect(self.try_again)
         layout.addWidget(again)
 
+        downloaded = QPushButton("Print downloaded file(s) name(s)")
+        downloaded.clicked.connect(self.print_downloaded_files_names)
+        layout.addWidget(downloaded)
+
+        empty = QPushButton("Print empty url(s)")
+        empty.clicked.connect(self.print_empty_urls)
+        layout.addWidget(empty)
+
         mainLayout.addLayout(layout)
 
         centralWidget.setLayout(mainLayout)
@@ -143,17 +150,22 @@ class MainWindow(QMainWindow):
         self.first_url.setText(url)
 
     def get_my_lidar(self):
+        print("\n")
+        print("Get My LiDAR !")
+        print("----")
+
+        self.success.clear()
+        self.fails.clear()
+
         os.chdir(self.path.text())
 
-        east = np.arange(self.x_start.value(), self.x_end.value() + 2, 2)
-        north = np.arange(self.y_start.value(), self.y_end.value() + 2, 2)
+        east = range(self.x_start.value(), self.x_end.value() + 2, 2)
+        north = range(self.y_start.value(), self.y_end.value() + 2, 2)
 
         for e in east:
             for n in north:
-                # url configuration
                 url = f"{self.main_url.text()}/{self.token.text()}/telechargement/prepackage/LIDARHD_PACK_{self.id.text()}_{self.year.value()}$LIDARHD_1-0_LAZ_{self.id.text()}-{str(e).zfill(4)}_{str(n).zfill(4)}-{self.year.value()}/file/LIDARHD_1-0_LAZ_{self.id.text()}-{str(e).zfill(4)}_{str(n).zfill(4)}-{self.year.value()}.7z"
 
-                # downloading
                 print("Downloading file: {}".format(url.split("/")[-1]))
                 try:
                     wget.download(url)
@@ -164,12 +176,14 @@ class MainWindow(QMainWindow):
                     continue
                 else:
                     self.success.append(url)
-                    print("\nDone !")
+                    print("\n")
+                    print("Done !")
                     print("----")
                 
+        print("\n")
         print(f"{len(self.success)} file(s) downloaded.")
         print(f"{len(self.fails)} empty url(s).")
-        print("\n")
+        print("----")
 
     def browse(self):
         path = QFileDialog.getExistingDirectory(self, 'Select destination folder')
@@ -177,6 +191,10 @@ class MainWindow(QMainWindow):
             self.path.setText(path)
 
     def try_again(self):
+        print("\n")
+        print("Try again !")
+        print("----")
+
         fails = []
         for url in self.fails:
             print("Downloading file: {}".format(url.split("/")[-1]))
@@ -193,6 +211,23 @@ class MainWindow(QMainWindow):
                 print("----")
                 
         self.fails = fails
+        print("\n")
         print(f"{len(self.success)} file(s) downloaded.")
         print(f"{len(self.fails)} empty url(s).")
+        print("----")
+
+    def print_downloaded_files_names(self):
         print("\n")
+        print("Downloaded file(s) name(s) :")
+        print("----")
+        for url in sorted(self.success):
+            print(url.split("/")[-1])
+        print("----")
+
+    def print_empty_urls(self):
+        print("\n")
+        print("Empty url(s) :")
+        print("----")
+        for url in sorted(self.fails):
+            print(url)
+        print("----")
