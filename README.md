@@ -1,3 +1,1 @@
-# GML
- ---
- # **G**et **M**y **L**iDAR !
+# GML - Get My LiDAR !
