@@ -12,6 +12,8 @@
 
 ## How to use GML
 
+Work in progress...
+
 ## Instructions to build GML from sources
 
 The easiest way to build *GML** from sources is to use *Conda*.
