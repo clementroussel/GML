@@ -1,5 +1,9 @@
 # GML - Get My LiDAR !
 
+**GML** is a simple but useful tool to easily download multiple IGN LiDAR HD tiles of a same block.
+
+[Instructions to build **GML** from sources](Instrucitons-to-build-GML-from-sources)
+
 ## Instructions to build **GML** from sources
 
 The easiest way to build **GML** from sources is to use *Conda*.
