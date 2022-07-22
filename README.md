@@ -20,7 +20,7 @@ Work in progress...
 The easiest way to build **GML** from sources is to use *Conda*.
 
 1. Install *Conda* for your operating system: [miniconda](https://docs.conda.io/en/latest/miniconda.html)
-2. Download *pyLong main repository* : [GML-main](https://github.com/clementroussel/GML/archive/refs/heads/main.zip)
+2. Download *GML main repository* : [GML-main](https://github.com/clementroussel/GML/archive/refs/heads/main.zip)
 3. Unzip the archive and keep only the *src* and *requirements* folders
 4. Open a *Conda Powershell Prompt* and move to the **GML** directory
 5. Create and activate a virtual environment dedicated to **GML**:
