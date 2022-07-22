@@ -8,7 +8,8 @@
 
 ## Download GML for your OS
 
-- [GML for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.exe/download)
+- [GML installer for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.exe/download)
+- [GML portable for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.zip/download)
 
 ## How to use GML
 
