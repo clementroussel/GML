@@ -19,6 +19,9 @@
 
 ## Comment utiliser GML
 
+L'url de téléchargement d'une dalle LiDAR HD de l'IGN ressemble à:
+`https://wxs.ign.fr/c90xknypoz1flvgojchbphgt/telechargement/prepackage/LIDARHD_PACK_PM_2021$LIDARHD_1-0_LAZ_PM-0916_6463-2021/file/LIDARHD_1-0_LAZ_PM-0916_6463-2021.7z`
+
 <div id="header" align="center">
   <img src="gml_screenshot.png" width="800"/>
 </div>
