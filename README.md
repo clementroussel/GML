@@ -14,7 +14,7 @@
 ## Comment utiliser GML
 
 <div id="header" align="center">
-  <img src="gml.png" width="400"/>
+  <img src="gml.png" width="600"/>
 </div>
 
 ## Instructions to build GML from sources
