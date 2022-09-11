@@ -17,6 +17,13 @@
   <img src="gml.png" width="800"/>
 </div>
 
+- Configurez les différents champs pour construire l'url d'accès aux données.
+- Choississez le répertoire où seront écrites les données téléchargées.
+- Lancez le téléchargement avec la commande **Get My LiDAR !**.
+- Si certains téléchargements ont échoués, vous pouvez relancer le téléchargement des fichiers manquants avec la commande **Try agin !**.
+- La commande **Print downloaded file(s) name(s)** permet d'afficher le nom des fichiers téléchargés.
+- La commande **Print empty url(s)** permet d'afficher les fichiers non téléchargés.
+
 ## Instructions to build GML from sources
 
 The easiest way to build **GML** from sources is to use *Conda*.
