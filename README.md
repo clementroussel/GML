@@ -1,5 +1,11 @@
 # GML - Get My LiDAR !
 
+<div id="header" align="center">
+  <img src="gml_icon.png" width="48"/>
+</div>
+
+---
+
 **GML** est un outil permettant de télécharger facilement un ensemble de dalles LiDAR HD de l'IGN d'un même bloc. 
 
 1. [Télécharger GML pour votre OS](#Télécharger-GML-pour-votre-OS)
@@ -14,7 +20,7 @@
 ## Comment utiliser GML
 
 <div id="header" align="center">
-  <img src="gml.png" width="800"/>
+  <img src="gml_screenshot.png" width="800"/>
 </div>
 
 - Configurez les différents champs pour construire l'url d'accès aux données.
