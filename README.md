@@ -12,7 +12,7 @@
 2. [Comment utiliser GML](#Comment*-utiliser-GML)
 3. [Instructions pour exécuter GML depuis le code source](#Instructions-pour-exécuter-GML-depuis-le-code-source)
 
-## Télécharger GML pour votre OS
+## Télécharger GML
 
 - [Installateur pour Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.exe/download)
 - [Version portable for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.zip/download)
