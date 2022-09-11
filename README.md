@@ -1,12 +1,12 @@
 # GML - Get My LiDAR !
 
-**GML** is a simple but useful tool to easily download multiple IGN LiDAR HD tiles of a same block.
+**GML** est un outil permettant de télécharger facilement un ensemble de dalles LiDAR HD de l'IGN d'un même bloc. 
 
-1. [Download GML for your OS](#Download-GML-for-your-OS)
-2. [How to use GML](#How-to-use-GML)
-3. [Instructions to build GML from sources](#Instructions-to-build-GML-from-sources)
+1. [Télécharger GML pour votre OS](#Télécharger-GML-pour-votre-OS)
+2. [Comment utiliser GML](#How-to-use-GML)
+3. [Instructions pour exécuter GML depuis le code source](#Instructions-to-build-GML-from-sources)
 
-## Download GML for your OS
+## Télécharger GML pour votre OS
 
 - [GML installer for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.exe/download)
 - [GML portable for Windows 10](https://sourceforge.net/projects/get-my-lidar/files/GML_22-07.zip/download)
