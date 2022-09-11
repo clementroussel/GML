@@ -3,8 +3,8 @@
 **GML** est un outil permettant de télécharger facilement un ensemble de dalles LiDAR HD de l'IGN d'un même bloc. 
 
 1. [Télécharger GML pour votre OS](#Télécharger-GML-pour-votre-OS)
-2. [Comment utiliser GML](#How-to-use-GML)
-3. [Instructions pour exécuter GML depuis le code source](#Instructions-to-build-GML-from-sources)
+2. [Comment utiliser GML](#Comment*-utiliser-GML)
+3. [Instructions pour exécuter GML depuis le code source](#Instructions-pour-exécuter-GML-depuis-le-code-source)
 
 ## Télécharger GML pour votre OS
 
@@ -20,31 +20,25 @@
 - Configurez les différents champs pour construire l'url d'accès aux données.
 - Choississez le répertoire où seront écrites les données téléchargées.
 - Lancez le téléchargement avec la commande **Get My LiDAR !**.
-- Si certains téléchargements ont échoués, vous pouvez relancer le téléchargement des fichiers manquants avec la commande **Try agin !**.
+- Si certains téléchargements ont échoués, vous pouvez relancer le téléchargement des fichiers manquants avec la commande **Try again !**.
 - La commande **Print downloaded file(s) name(s)** permet d'afficher le nom des fichiers téléchargés.
-- La commande **Print empty url(s)** permet d'afficher les fichiers non téléchargés.
+- La commande **Print empty url(s)** permet d'afficher l'url des fichiers non téléchargés.
 
-## Instructions to build GML from sources
+## Instructions pour exécuter GML depuis le code source
 
-The easiest way to build **GML** from sources is to use *Conda*.
+1. Installez *Conda* pour votre système d'exploitation: [miniconda](https://docs.conda.io/en/latest/miniconda.html).
+2. Téléchargez le code source de **GML** : [GML-main](https://github.com/clementroussel/GML/archive/refs/heads/main.zip).
+3. Décompressez l'archive et gardez uniquement les répertoires *src* et *requirements*.
+4. Ouvrez *Conda Powershell Prompt* and déplacez vous dans le répertoire *GML-main*.
+5. Créez et activer un environnement virtuel dédié à **GML**:
 
-1. Install *Conda* for your operating system: [miniconda](https://docs.conda.io/en/latest/miniconda.html)
-2. Download *GML main repository* : [GML-main](https://github.com/clementroussel/GML/archive/refs/heads/main.zip)
-3. Unzip the archive and keep only the *src* and *requirements* folders
-4. Open a *Conda Powershell Prompt* and move to the **GML** directory
-5. Create and activate a virtual environment dedicated to **GML**:
+    ```conda create --name gml python=3.6```  
+    ```conda activate gml```
 
-    ```conda create --name gml-venv python=3.6```  
-    ```conda activate gml-venv```
-
-6. Install the required modules:
+6. Installez les dépendances du projet:
 
     ```pip install -r requirements/base.txt```
 
-7. Run **gml**:
+7. Lancez **gml**:
 
     ```fbs run```
-
-### About *fbs*
-
-To learn more about *fbs* module, visit https://build-system.fman.io/.
