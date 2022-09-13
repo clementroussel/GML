@@ -38,7 +38,7 @@ L'url de téléchargement d'une dalle LiDAR HD de l'IGN ressemble à ceci:
 1. Installez *Conda* pour votre système d'exploitation: [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 2. Téléchargez le code source de **GML** : [GML-main](https://github.com/clementroussel/GML/archive/refs/heads/main.zip).
 3. Décompressez l'archive et gardez uniquement les répertoires *src* et *requirements*.
-4. Ouvrez *Conda Powershell Prompt* and déplacez vous dans le répertoire *GML-main*.
+4. Ouvrez *Conda Powershell Prompt* et déplacez vous dans le répertoire *GML-main*.
 5. Créez et activer un environnement virtuel dédié à **GML**:
 
     ```conda create --name gml python=3.6```  
