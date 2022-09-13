@@ -6,9 +6,9 @@
 
 ---
 
-**GML** est un outil permettant de télécharger facilement un ensemble de dalles LiDAR HD de l'IGN d'un même bloc. 
+**GML** est un outil permettant de télécharger facilement un ensemble de dalles LiDAR HD de l'IGN appartenant à un même bloc. 
 
-1. [Télécharger GML pour votre OS](#Télécharger-GML-pour-votre-OS)
+1. [Télécharger GML](#Télécharger-GML)
 2. [Comment utiliser GML](#Comment*-utiliser-GML)
 3. [Instructions pour exécuter GML depuis le code source](#Instructions-pour-exécuter-GML-depuis-le-code-source)
 
